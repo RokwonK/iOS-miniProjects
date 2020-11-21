@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +18,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DT6-fw-7nx">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="200" id="zqP-pt-AQ6" customClass="ListCell" customModule="BountryList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="200"/>
@@ -57,7 +58,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="bountryLabel" destination="Kgo-FS-MKJ" id="z2Y-yQ-mWf"/>
+                                            <outlet property="bountyLabel" destination="Kgo-FS-MKJ" id="LbJ-Cn-bvQ"/>
                                             <outlet property="imgView" destination="UiB-2H-3S8" id="fDO-q7-Zav"/>
                                             <outlet property="nameLabel" destination="iSB-EY-BbZ" id="pBY-pJ-mfq"/>
                                         </connections>
@@ -69,14 +70,14 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DT6-fw-7nx" secondAttribute="bottom" id="Qqy-kd-giv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DT6-fw-7nx" secondAttribute="trailing" id="cXf-s5-jdg"/>
                             <constraint firstItem="DT6-fw-7nx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j2E-eU-89x"/>
                             <constraint firstItem="DT6-fw-7nx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="z6K-3F-mhw"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <segue destination="JvQ-1Z-Oc0" kind="presentation" identifier="showDetail" id="mgQ-nB-9eP"/>
@@ -124,7 +125,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lu3-zK-ear"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0Kf-t8-Nsd" firstAttribute="centerX" secondItem="lu3-zK-ear" secondAttribute="centerX" id="9AV-jw-B0W"/>
                             <constraint firstItem="13N-oJ-WwS" firstAttribute="centerX" secondItem="HwY-rH-haQ" secondAttribute="centerX" id="Bh5-Gt-tuB"/>
@@ -136,10 +138,9 @@
                             <constraint firstItem="8Nq-dF-V1S" firstAttribute="top" secondItem="lu3-zK-ear" secondAttribute="top" constant="20" id="oen-co-lfy"/>
                             <constraint firstItem="0Kf-t8-Nsd" firstAttribute="top" secondItem="lu3-zK-ear" secondAttribute="top" constant="100" id="s0w-0r-Mdo"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="lu3-zK-ear"/>
                     </view>
                     <connections>
-                        <outlet property="bountryLabel" destination="13N-oJ-WwS" id="256-cV-XXc"/>
+                        <outlet property="bountyLabel" destination="13N-oJ-WwS" id="CEh-kC-uXz"/>
                         <outlet property="imgView" destination="0Kf-t8-Nsd" id="bHW-Bi-gZR"/>
                         <outlet property="nameLabel" destination="HwY-rH-haQ" id="4z8-dg-rld"/>
                     </connections>
@@ -151,5 +152,8 @@
     </scenes>
     <resources>
         <image name="close_ic" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

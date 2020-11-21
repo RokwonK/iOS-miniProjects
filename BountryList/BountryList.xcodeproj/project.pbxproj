@@ -14,6 +14,7 @@
 		095F900F2551921F00D6DBFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095F900D2551921F00D6DBFC /* LaunchScreen.storyboard */; };
 		095F9019255192B100D6DBFC /* BountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F9018255192B100D6DBFC /* BountryViewController.swift */; };
 		095F901C25519CF100D6DBFC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095F901B25519CF100D6DBFC /* DetailViewController.swift */; };
+		09D1925C2569155D00072643 /* BountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1925B2569155D00072643 /* BountyInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		095F90102551921F00D6DBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		095F9018255192B100D6DBFC /* BountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountryViewController.swift; sourceTree = "<group>"; };
 		095F901B25519CF100D6DBFC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		09D1925B2569155D00072643 /* BountyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				095F90042551921E00D6DBFC /* SceneDelegate.swift */,
 				095F90082551921E00D6DBFC /* Main.storyboard */,
 				095F9018255192B100D6DBFC /* BountryViewController.swift */,
+				09D1925B2569155D00072643 /* BountyInfo.swift */,
 				095F901B25519CF100D6DBFC /* DetailViewController.swift */,
 				095F900B2551921F00D6DBFC /* Assets.xcassets */,
 				095F900D2551921F00D6DBFC /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D1925C2569155D00072643 /* BountyInfo.swift in Sources */,
 				095F9019255192B100D6DBFC /* BountryViewController.swift in Sources */,
 				095F90032551921E00D6DBFC /* AppDelegate.swift in Sources */,
 				095F90052551921E00D6DBFC /* SceneDelegate.swift in Sources */,
